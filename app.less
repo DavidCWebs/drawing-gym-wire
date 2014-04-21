@@ -1,3 +1,11 @@
+@import "fonts.less";
+@import "variables.less";
+/* VARIABLES
+ * 
+ */
+
+@headingFont: "Bree Serif", Arial;
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -5,8 +13,40 @@
 body {
   padding-bottom: 40px;
   color: #000;
+    font-family: "Open Sans", arial;
 }
 
+.content {// For static header
+    padding-top: 50px;
+}
+
+.thumbnail,
+.btn {
+    border-radius: 0;
+}
+
+.btn {
+    background-color: @purpleblue;
+    color: #fff;
+    border-color: #000;
+}
+
+h1.main-heading {
+    margin-top: 0;
+    padding-top: 40px;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+h1,
+h2,
+h3,
+h4 {font-family: @headingFont;
+}
+
+hr {
+    border-top: 1px solid #eee;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -68,15 +108,20 @@ body {
     right: 30%;
     left: 30%;
     bottom: 20px;
-    padding-bottom: 30px;
-    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
 }
 
+/*.carousel-control.right {
+    background-image: none;
+}*/
 /* HERO IMAGE
  * ----------------------------------------------- */
 .image-wrapper {
     position: relative;
     margin-bottom: 40px;
+    height: 400px;
+    background-color: @yellowgold;//
 }
 
 /* MARKETING CONTENT

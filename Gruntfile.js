@@ -9,7 +9,8 @@ module.exports = function(grunt) {
         files: {
         	
         'style.css': ['app.less'],
-        'style2.css': ['app2.less']
+        'style2.css': ['app2.less'],
+        'style3.css': ['app3.less']
           /*'style.css': [
             'app.less'
            ]*/

@@ -1,3 +1,10 @@
+@import "fonts.less";
+@import "variables.less";
+
+.jumbotron {
+    background-color: @lightblue;
+}
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
@@ -33,4 +40,64 @@ body {
 .navbar-nav.navbar-right:last-child {
 margin-right: 0;
 }
+}
+
+//.thumbnail {max-height: 240px;}
+
+.nav li {
+    text-transform: uppercase;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.top-l-padding {
+    padding-top: 40px;
+}
+
+.top-margin {
+    margin-top: 20px;
+}
+
+.yellowback {
+    background-color: beige;
+}
+
+.blueback {
+    background-color: @lightblue;
+}
+
+.greyback {
+    background-color: @grey;
+}
+
+.blueback,
+.greyback {
+    padding: 10px 20px 20px 20px;
+}
+
+.orangeback {
+    background-color: @greengold;
+    color: #fff;
+}
+
+.testimonials {
+    padding: 20px;
+}
+
+.thumbnail,
+.btn {
+    border-radius: 0;
+}
+
+.testimonials.blueback {
+    margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Gentium Basic", arial;    
 }
