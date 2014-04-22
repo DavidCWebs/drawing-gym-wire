@@ -3,14 +3,15 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
-	less: {
+      
+    less: {
       dist: {
         files: {
         	
         'style.css': ['app.less'],
         'style2.css': ['app2.less'],
-        'style3.css': ['app3.less']
+        'style3.css': ['app3.less'],
+        'style4.css': ['app4.less']
           /*'style.css': [
             'app.less'
            ]*/
@@ -34,11 +35,12 @@ module.exports = function(grunt) {
     
   });
 
-  // Load the plugin that provides the "less" task.
+  // Load the plugin that provides the task.
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks("grunt-contrib-watch");
-
+    
   // Default task(s).
   grunt.registerTask('default', ['watch']);
+  
 
 };
