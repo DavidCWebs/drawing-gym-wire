@@ -24,6 +24,7 @@
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -93,40 +94,50 @@
         <div class="image-wrapper">
             <!--<img class="img-responsive" src="images/header-image.jpg" alt="Image 1">-->
             <div class="container">
-                  <h1 class="main-heading">Learn to Sketch with Drawing Gym</h1>
-                  <p class="lead">Drawing Gym is the practical way to learn sketching.<br>Specially designed to help architects, engineers and interior designers improve their drawing technique.</p>
+                  <div class="col-md-8 heading-center">
+                      <h1 class="main-heading">Learn to Sketch with Drawing Gym</h1>
+                  <p class="lead">Drawing Gym is the practical way to learn sketching.<br>Our online courses are specially designed to help architects, engineers and interior designers improve their drawing technique.</p>
                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                  </div>
+                  
             </div>
         </div>
     </div>
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-
+<div class="row top-xl-pad">
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
       <div class="row bottom-xl-pad">
         <div class="col-sm-4">
           <img src="images/hero-image-1.jpg" class="img-responsive thumbnail">
+          <div class="infobox">
           <h2>For Architects</h2>
           <p>A short sentence explaining why Drawing Gym is useful for architects.</p>
           <p><a href="#">View details &raquo;</a></p>
+          </div>
         </div>
         <div class="col-sm-4">
           <img src="images/6Eva-MacNamaraExpeditionjpg-547x371.jpg" class="img-responsive thumbnail">
+          <div class="infobox">
           <h2>For Engineers</h2>
           <p>Learn how to effectively communicate ideas in the most immediate way possible.</p>
           <p><a href="#">View details &raquo;</a></p>
+          </div>
        </div>
         <div class="col-sm-4">
           <img src="images/2Ed-HollisStructure-Mode-547x371.jpg" class="img-responsive thumbnail">
+          <div class="infobox">
           <h2>For Interior Designers</h2>
           <p>Sketching is an invaluable way of communicating with clients.</p>
           <p><a href="#">View details &raquo;</a></p>
+          </div>
         </div>
       </div><!-- /.row -->
     </div><!-- /.container -->
+</div>
       
       <!-- START THE FEATURETTES -->
 
@@ -141,22 +152,48 @@
                   </div><!-- /.lead -->
                 </div>
                 <div class="col-md-5 col-md-offset-1">
-                  <img class="featurette-image img-responsive thumbnail" src="images/2Ed-HollisStructure-Mode-527x371.jpg" alt="Generic placeholder image">
+                  <div class="overlay-container">
+                        <img class="featurette-image img-responsive thumbnail" 
+                        src="images/2Ed-HollisStructure-Mode-527x371.jpg" alt="Generic placeholder image">
+                        <div class="overlay-wrapper"><!--allows a darkened background for legibility -->
+                        <div class="overlay-excerpt"><!-- allows overlay to be styled & positioned -->
+                                <h2>Improve Your Sketching</h2>
+                                    <p>This image was submitted as a homework assignment as part of the Basic Drawing Gym Course (used by permission). During the course, students submit homework assignments and receive detailed feedback and advice.</p>
+                                    <p><a href="#">Click Here for more information&nbsp;&raquo;</a></p>
+                        </div>
+                        </div>
+                    </div><!-- /.overlay-container -->
                 </div>
             </div><!-- /.row -->
         </div><!-- /.container -->
       </div>
 
-      <div class="row featurette shade-b top-xl-pad bottom-xl-pad">
+      <div class="row featurette top-xl-pad bottom-xl-pad">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                  <img class="featurette-image img-responsive thumbnail" src="images/2Martin-FowlerWebb-Yates1-540x371.jpg" alt="Generic placeholder image">
+                  <div class="overlay-container">
+                        <img class="featurette-image img-responsive thumbnail" 
+                        src="images/2Martin-FowlerWebb-Yates1-540x371.jpg" alt="Generic placeholder image">
+                        <div class="overlay-wrapper"><!--allows a darkened background for legibility -->
+                        <div class="overlay-excerpt"><!-- allows overlay to be styled & positioned -->
+                                <h2>Description of This Image</h2>
+                                    <p>This description is visible when the user hovers their mouse over the image. If necessary, clicking this area could open a larger image, or a window that gives the user more information about the student and/or the piece of work that is featured.</p>
+                                    <p><a href="#">Click Here for more information&nbsp;&raquo;</a></p>
+                        </div>
+                        </div>
+                    </div><!-- /.overlay-container -->
                 </div>
                 <div class="col-md-6 col-md-offset-1">
                   <h2 class="featurette-heading">What is Drawing Gym?&nbsp;<span class="text-muted"></span></h2>
                   <div class="lead">
                   <p>Drawing Gym is a practical and proven way for professionals to improve their sketching skills.</p>
+                  <ul class="fa-ul">
+              <li><i class="fa-li fa fa-pencil"></i>On-line courses</li>
+              <li><i class="fa-li fa fa-pencil"></i>Community - share your work with others</li>
+              <li><i class="fa-li fa fa-pencil"></i>Cost effective</li>
+              <li><i class="fa-li fa fa-pencil"></i>Efficient</li>
+          </ul>
                   </div><!-- /.lead -->
                 </div>
             </div><!-- /.row -->
@@ -168,11 +205,28 @@
         <div class="row">
         <div class="col-md-6">
           <h2 class="featurette-heading">Who is Drawing Gym For?&nbsp;<span class="text-muted"></span></h2>
-          <p class="lead">Drawing Gym is focused on architects, engineers and other professions for whom visual communication is an essential core skill.</p>
+          <div class="lead">
+          <p>Drawing Gym is focused on architects, engineers and other professions for whom visual communication is an essential core skill.</p><ul class="fa-ul">
+              <li><i class="fa-li fa fa-pencil"></i>List benefits</li>
+              <li><i class="fa-li fa fa-pencil"></i>Flexible - take our courses at any time</li>
+              <li><i class="fa-li fa fa-pencil"></i>Cost effective</li>
+              <li><i class="fa-li fa fa-pencil"></i>Efficient</li>
+          </ul>
+        </div>
         </div>
         
         <div class="col-md-5 col-md-offset-1">
-          <img class="featurette-image img-responsive thumbnail" src="images/6Eva-MacNamaraExpeditionjpg-547x371.jpg" alt="Generic placeholder image">
+          <div class="overlay-container">
+                        <img class="featurette-image img-responsive thumbnail" 
+                        src="images/6Eva-MacNamaraExpeditionjpg-547x371.jpg" alt="Generic placeholder image">
+                        <div class="overlay-wrapper"><!--allows a darkened background for legibility -->
+                        <div class="overlay-excerpt"><!-- allows overlay to be styled & positioned -->
+                                <h2>Improve Your Sketching</h2>
+                                    <p>This image was submitted as a homework assignment as part of the Basic Drawing Gym Course (used by permission). During the course, students submit homework assignments and receive detailed feedback and advice.</p>
+                                    <p><a href="#">Click Here for more information&nbsp;&raquo;</a></p>
+                        </div>
+                        </div>
+                    </div><!-- /.overlay-container -->
         </div>
         </div><!-- /.row -->
         </div><!-- /.container -->
@@ -228,20 +282,75 @@
                   <img src="images/slider-4.jpg" class="img-responsive" alt="Third slide">
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1>Example headline.</h1>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                      <p><i class="fa fa-quote-left"></i>&nbspDrawing Gym really helped our team to develop an individual style of sketching - we'd strongly recommend the Drawing Gym programme.&nbsp;<i class="fa fa-quote-right"></i></p>
+                      <h3>Tony Stark, <a href ="#">Iron Man Enterprises</a></h3>
                   </div>
                   </div>
                 </div>
               </div>
                   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  <span class="icon-prev"></span></a><!-- Removed: glyphicon glyphicon-chevron-left -->
                   <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                  <span class="icon-next"></span></a><!-- Removed: glyphicon glyphicon-chevron-right -->
         </div><!-- /#myCarousel -->
     </div><!-- /.col-md-12 -->
     </div>
 </div><!-- /.row -->
+
+<section id="pricing">
+    <div class="container">
+    <h2 class="featurette-heading">Sign Up Now&nbsp;<span class="text-muted"></span></h2>
+    <p class="lead">We can add a pricing table like the one below to showcase different products - and to gently steer users towards the option you want them to take. In this case, the "Pro-Support" package should have the most prominent background colour.</p>
+    <div class="pricing-table pricing-three-column row">
+        <div class="col-sm-4 col-lg-4">
+          <div class="plan">
+            <div class="plan-name-bronze">
+            <h2>Drawing Gym Basic</h2>
+            <span>£49.99</span>
+              </div>
+          <ul>
+            <li class="plan-feature">10 Lessons</li>
+            <li class="plan-feature">Access to the Drawing Gym Community</li>
+            <li class="plan-feature"><a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Select</a></li>
+          </ul>
+          </div><!-- /.plan -->
+          
+        </div>
+        <div style="z-index:55;" class="col-sm-4 col-lg-4">
+          <div class="plan">
+              <div class="plan-name-gold">
+            <h2>Pro-Support<!--<span class="badge badge-warning">Popular</span>--></h2>
+            <span><strike>£105</strike>   <font color="red">£79 - <span class="label label-warning">Sale</span></font></span>
+          </div>
+          <ul>
+            <li class="plan-feature">10 Lessons</li>
+            <li class="plan-feature">Weekly webinar & group support</li>
+            <li class="plan-feature">Access to the Drawing Gym Community</li>
+            <li class="plan-feature">Upload your work</li>
+            <li class="plan-feature">Access to the Drawing Gym Community</li>
+            <li class="plan-feature"><a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Select</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="plan">
+              <div class="plan-name-silver">
+            <h2>Personal Coaching</h2>
+            <span>£200</span> per Month</span>
+          </div>
+          <ul>
+            <li class="plan-feature">Access to all sketching courses</li>
+            <li class="plan-feature">Weekly webinar & group support</li>
+            <li class="plan-feature">Access to the Drawing Gym Community</li>
+            <li class="plan-feature">Personal support & individual tuition</li>
+            <li class="plan-feature"><a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Select</a></li>
+          </ul>
+          </div>
+        </div>
+    </div>
+</div>
+</section><!-- /section -->
+
 </div>
 
 
@@ -250,8 +359,33 @@
     <div class="row">
       <footer>
         <div class="container">
+            <div class="row bottom-pad">
+                <div class="col-md-4">
+                    <h3>Stay in Contact</h3>
+                    <ul class="fa-ul">
+                        <li><a href="#"><i class="fa-li fa fa-twitter"></i>&nbsp;Follow us on Twitter</a></li>
+                        <li><a href="#"><i class="fa-li fa fa-youtube"></i>&nbsp;Find us on YouTube</a></li>
+                        <li><a href="#"><i class="fa-li fa fa-linkedin"></i>&nbsp;Join our LinkedIn Group</a></li>
+                        <li><a href="#"><i class="fa-li fa fa-envelope"></i>&nbsp;Email Us</a></li>
+                        <li><a href="#"><i class="fa-li fa fa-phone"></i>&nbsp;Call us on 0123 456 789</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Latest From the Blog</h3>
+                    <ul class="fa-ul">
+                        <li><a href="#"><i class="fa-li fa fa-pencil"></i>&nbsp;An interesting blog article...</a></li>
+                        <li><a href="#"><i class="fa-li fa fa-pencil"></i>&nbsp;Any type of content could be added here...</a></li>
+                        <li><a href="#"><i class="fa-li fa fa-pencil"></i>&nbsp;Another from the blog...</a></li>
+                        <li><a href="#"><i class="fa-li fa fa-pencil"></i>&nbsp;Drawing is Cool!</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>Drawing Gym is created by Trevor Flynn. Trevor has decades of experience helping architects and engineers improve their sketching skills. Find out <a href="#">more about Trevor</a>.</p>
+                </div>
+            </div>
             <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p>&copy; 2014 Drawing at Work Ltd.&nbsp;&middot;&nbsp;<a href="#">Privacy</a>&nbsp;&middot;&nbsp;<a href="#">Terms</a></p>
         </div><!-- /.container -->
       </footer>
     </div><!-- /.row -->

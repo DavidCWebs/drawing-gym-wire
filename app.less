@@ -10,6 +10,10 @@
      padding-bottom: 80px;   
 }
 
+.bottom-pad {
+    padding-bottom: 20px;
+}
+
 .top-xl-pad {
     padding-top: 80px;
 }
@@ -72,7 +76,6 @@ h4 {font-family: @headingFont;
 hr {
     border-top: 1px solid #eee;
 }
-
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -194,13 +197,30 @@ height: 80px;
     background: rgba(0,0,0,0.7);
 }
 
+.index-2 .carousel-caption {
+    bottom: 80px;
+}
+
 .carousel-caption h3 {
     margin-bottom: 30px;
 }
 
-/*.carousel-control.right {
-    background-image: none;
-}*/
+.carousel-control .icon-next:before {
+content: '\203a';
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next {
+    font-size: 120px;
+    line-height: 60px;
+}
+
+.carousel-control .icon-prev:before {
+content: '\2039';
+}
+
+.carousel-indicators li {
+    border-radius: 0;
+}
 /* HERO IMAGE
  * ----------------------------------------------- */
 .image-wrapper {
@@ -210,10 +230,33 @@ height: 80px;
     background-color: @parchment;
 }
 
+.heading-center.col-md-8 {
+    margin: 0 auto;
+    float: none;
+}
+
+
+.index .image-wrapper {
+    margin-bottom: 0;
+}
+
 footer {
     background-color: @newyellow;
     min-height: 100px;
     padding: 20px 0;
+}
+
+.index-3 footer {
+    background-color: #fff;
+}
+
+.index-6 footer {
+    background-color: @purpleblue;
+    color: #fff;
+}
+
+.featurette-divider.footer-border {
+    margin-bottom: 0;
 }
 
 footer a {
@@ -221,12 +264,243 @@ footer a {
     text-decoration: underline;
 }
 
+.index-6 footer a {
+    color: #fff;
+    text-decoration: underline;
+}
 
+.index-6 footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.index-6 footer .fa-ul>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.index-6 footer .fa-ul>li>a:hover {
+    text-decoration: underline;
+    color: #666;
+}
+
+footer .fa-ul>li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer .fa-ul>li>a:hover {
+    text-decoration: underline;
+    color: #666;
+}
+
+footer .fa-li { font-size: 20px; }
+
+footer {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* HOVER OVERLAY
+ * -----------------------------------------------
+ */
+
+.overlay-container {
+	position: relative;
+    width: 100%;
+    
+}
+
+.overlay-container > img {
+    display: block;
+}
+
+.overlay-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	overflow:hidden;
+	cursor: pointer;
+	-webkit-transition: all 0.8s;/*sets up transition effect*/
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+/* Style the excerpt - normally not visible */
+.overlay-excerpt {
+	color:#fff;
+	background: none;
+	padding: 20px 20px 5px 20px;
+	/*font-size:18px;*/
+	/*line-height:20px;*/
+	text-align:left;
+	opacity: 0;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+/*show excerpt when user hovers on the overlay div */
+.overlay-wrapper:hover .overlay-excerpt {
+	opacity: 1;
+}
+
+/*opaque background to image to improve legibility*/
+.overlay-wrapper:hover {
+  background-color:#c0c0c0;
+	background-color: rgba(0,0,0,0.65);
+}
+
+.overlay-excerpt h2 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.overlay-excerpt a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.overlay-excerpt a:hover {
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+/* PRICING TABLE
+ * ------------------------------------------------
+ */
+
+.pricing-table .plan {
+  margin-left:0px;
+  border-radius: 0;
+  text-align: center;
+  background-color: #f3f3f3;
+  /*-moz-box-shadow: 0 0 6px 2px #b0b2ab;
+  -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+  box-shadow: 0 0 6px 2px #b0b2ab;*/
+}
+ 
+ .plan:hover {
+  background-color: #fff;
+  -moz-box-shadow: 0 0 12px 3px #b0b2ab;
+  -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
+  box-shadow: 0 0 12px 3px #b0b2ab;
+}
+ 
+ .plan {
+  padding: 20px;
+  margin-left:0px;
+  color: #ff;
+  background-color: #5e5f59;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+  
+.plan-name-bronze {
+  padding: 20px;
+  color: #fff;
+  background-color: @silvergrey;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+ }
+  
+.plan-name-silver {
+  padding: 20px;
+  color: #fff;
+  background-color: @cream;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+ }
+  
+.plan-name-gold {
+  padding: 20px;
+  color: #fff;
+  background-color: @yellowgold;
+  -moz-border-radius:0;
+  -webkit-border-radius: 50;
+  border-radius: 0;
+  } 
+  
+.pricing-table-bronze  {
+  padding: 20px;
+  color: #fff;
+  background-color: #f89406;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+  
+.pricing-table .plan .plan-name span {
+  font-size: 20px;
+}
+ 
+.pricing-table .plan ul {
+  list-style: none;
+  margin: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+ 
+.pricing-table .plan ul li.plan-feature {
+  padding: 15px 10px;
+  //border-top: 1px solid #c5c8c0;
+  margin-right: 35px;
+}
+ 
+.pricing-three-column {
+  //margin: 0 auto;
+  //width: 100%;
+}
+ 
+.pricing-variable-height .plan {
+  float: none;
+  margin-left: 2%;
+  vertical-align: bottom;
+  display: inline-block;
+  zoom:1;
+  *display:inline;
+}
+ 
+.plan-mouseover .plan-name {
+  background-color: #4e9a06 !important;
+}
+ 
+.btn-plan-select {
+  padding: 8px 25px;
+  font-size: 18px;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
+.panel {border-radius: 0; }
 
+.text-muted {
+    font-size: 0.6em;
+}
 .shade-a {
     background-color: @palercream;
+}
+
+.shade-b {
+    background-color: #f0f0f0;
+}
+
+.index .thumbnail {
+    margin-bottom: 0;
+}
+
+.infobox {
+    background-color: #fff;
+    padding: 10px;
 }
 
 /* Pad the edges of the mobile views a bit */
